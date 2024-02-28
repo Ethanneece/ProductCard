@@ -17,35 +17,65 @@ html {
     background-color: var(--Cream);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 400px) {
     .main {
         display: flex; 
         flex-direction: column;
         width: 90%; 
+        padding: 10px;
     }
 
     body {
         width: 100vw;
         height: 100%;
     }
+
+    .content {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    .productImage {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    picture {
+        max-width: 100%;
+        max-height: 245px;
+    }
 }
 
-@media (min-width: 375px) {
+@media (min-width: 400px) {
     .main {
         display: grid;
         width: 600px;
-         height: 450px;
+        height: 450px;
         grid-template-columns: 300px 300px;
+    }
+
+    .content {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
     }
 
     .productImage {
         max-width: 300px;
         max-height: 450px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
     }
 
     body {
         width: 100vw; 
         height: 100vh;
+    }
+
+    picture {
+        max-width: 300px;
+        max-height: 450px;
     }
 }
 
@@ -73,10 +103,8 @@ button {
     display: flex; 
     flex-direction: column;
     background-color: var(--White);
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
     gap: 30px;
-    padding: 35px;
+    padding: 30px;
 }
 
 .buttonP {
@@ -103,10 +131,6 @@ button {
     font-family: "Fraunces", sans-serif;
 }
 
-.productImage {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
 
 .productCategory {
     color: var(--Dark-Gray-Blue);

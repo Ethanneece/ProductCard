@@ -16,7 +16,10 @@
 </head>
 <body>
     <section class="main">
-    <img class="productImage" src="images/image-product-desktop.jpg" alt="product" />
+    <picture> 
+      <source media="(max-width:400px)" srcset="images/image-product-mobile.jpg">
+      <img class="productImage" src="images/image-product-desktop.jpg" alt="product" />
+    </picture>
     <div class="content">  
       <h2 class="productCategory">
         P E R F U M E 
