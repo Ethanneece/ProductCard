@@ -1,0 +1,130 @@
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-Dark-Blue: hsl(212, 21%, 14%);
+    --Dark-Gray-Blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0px; 
+    padding: 0px;
+
+    font-family: "Montserrat", sans-serif
+}
+
+html {
+    background-color: var(--Cream);
+}
+
+@media (max-width: 375px) {
+    .main {
+        display: flex; 
+        flex-direction: column;
+        width: 90%; 
+    }
+
+    body {
+        width: 100vw;
+        height: 100%;
+    }
+}
+
+@media (min-width: 375px) {
+    .main {
+        display: grid;
+        width: 600px;
+         height: 450px;
+        grid-template-columns: 300px 300px;
+    }
+
+    .productImage {
+        max-width: 300px;
+        max-height: 450px;
+    }
+
+    body {
+        width: 100vw; 
+        height: 100vh;
+    }
+}
+
+body {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Cream);
+}
+
+p {
+    font-size: 14px;
+    color: var(--Dark-Gray-Blue);
+    line-height: 1.2;
+}
+
+button {
+    outline: none;
+    background-color: var(--Dark-cyan);
+    border-radius: 5px; 
+    border: none;
+}
+
+.content {
+    display: flex; 
+    flex-direction: column;
+    background-color: var(--White);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    gap: 30px;
+    padding: 35px;
+}
+
+.buttonP {
+    color: var(--White);
+}
+
+.buttonContent {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 15px;
+}
+
+.prices {
+    display: flex; 
+    gap: 20px;
+    align-items: center;
+}
+
+.price {
+    color: var(--Dark-cyan);
+    font-size: 32px;
+    font-family: "Fraunces", sans-serif;
+}
+
+.productImage {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.productCategory {
+    color: var(--Dark-Gray-Blue);
+    font-size: 0.75em;
+    font-weight: normal;
+}
+
+.productName {
+    font-size: 2em;
+    font-family: "Fraunces", sans-serif;
+    line-height: 1;
+    width: 90%;
+}
+
+.discountPrice {
+
+    text-decoration: line-through;
+    color: var(--Dark-Gray-Blue);
+    font-size: 14px;
+    font-weight: normal;
+}
